@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "prepare": "shx mkdir -p dist/icons",
+    "prepare": "shx mkdir dist",
     "clean": "shx rm -rf dist & shx rm -f *.zip",
-    "copy": "npm run prepare & shx cp src/*.json dist & shx cp src/*.html dist & shx cp src/icons/*.png dist/icons",
+    "copy": "npm run prepare & shx cp src/*.json dist & shx cp src/*.html dist & shx cp src/*.png dist",
     "build": "npm run clean & npm run copy & babel src --out-dir dist --presets=@babel/preset-env",
-    "pack": "npm run build & zip inject-scripts.zip dist",
+    "publish": "npm run build & zip -j dist.zip dist/*",
     "pack-extension": "chrome --pack-extension=dist --no-message-box"
   },
   "browserslist": "> 0.25%, not dead",
