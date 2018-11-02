@@ -29,10 +29,10 @@
     "default_title": "Inject scripts"
   },
   "icons": {
-    "128": "icons/injected.png",
-    "16": "icons/injected.png",
-    "32": "icons/injected.png",
-    "48": "icons/injected.png"
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "permissions": [
     "https://*/*",
