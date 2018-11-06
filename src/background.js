@@ -18,7 +18,7 @@ const eject = (id) => {
 const setState = (id) => {
     chrome.browserAction.setIcon({
         tabId: id,
-        path: `icons/${isEnabled(id) ? 'in' : 'e'}jected.png`,
+        path: `icon.${isEnabled(id) ? 'in' : 'e'}jected.png`,
     });
     chrome.browserAction.setTitle({
         tabId: id,

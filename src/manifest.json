@@ -2,7 +2,7 @@
   "name": "Inject scripts",
   "version": "0.0.3",
   "manifest_version": 2,
-  "description": "Inject scripts in document for current tab",
+  "description": "Inject javascripts in document by URLs",
   "author": "Sergey Makoveev",
   "homepage_url": "http://sergey.makoveev.info",
   "background": {
@@ -25,14 +25,14 @@
     }
   ],
   "browser_action": {
-    "default_icon": "icons/ejected.png",
+    "default_icon": "icon.ejected.png",
     "default_title": "Inject scripts"
   },
   "icons": {
-    "128": "icons/injected.png",
-    "16": "icons/injected.png",
-    "32": "icons/injected.png",
-    "48": "icons/injected.png"
+    "16": "icon.16.png",
+    "32": "icon.32.png",
+    "48": "icon.48.png",
+    "128": "icon.128.png"
   },
   "permissions": [
     "https://*/*",
