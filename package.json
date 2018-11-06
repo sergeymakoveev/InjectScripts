@@ -1,13 +1,13 @@
 {
   "name": "InjectScripts",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
-    "prepare": "shx mkdir -p dist/icons",
-    "clean": "shx rm -rf dist",
-    "copy": "npm run prepare & shx cp src/*.json dist & shx cp src/*.html dist & shx cp src/icons/*.png dist/icons",
-    "build": "npm run clean & npm run copy & babel src --out-dir dist --presets=@babel/preset-env",
-    "pack-extension": "chrome --pack-extension=dist --no-message-box"
+    "prepare": "shx mkdir -p build/icons",
+    "clean": "shx rm -rf build",
+    "copy": "npm run prepare & shx cp src/*.json build & shx cp src/*.html build & shx cp src/icons/*.png build/icons",
+    "build": "npm run clean & npm run copy & babel src --out-dir build --presets=@babel/preset-env",
+    "pack-extension": "chrome --pack-extension=build --no-message-box"
   },
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
